@@ -5,8 +5,10 @@ public class FizzBuzzTests
     [Theory]
     [InlineData(1, "1")]
     [InlineData(2, "2")]
-    [InlineData(3, "Fizz")]
-    [InlineData(5, "Buzz")]
+    [InlineData(3, "Fizz")]    
+    [InlineData(5, "Buzz")]   
+    [InlineData(15, "FizzBuzz")]
+
 
     public void TestFissBuzz(int input ,string expected)
     {
