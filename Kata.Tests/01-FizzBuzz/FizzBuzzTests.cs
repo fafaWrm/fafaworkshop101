@@ -23,6 +23,7 @@ public class FizzBuzzTests
 
     [Theory]
     [InlineData(0)]
+    [InlineData(-1)]
     public void TestFissBuzzThrowArgumentException(int input)
     {
         // Arrange
