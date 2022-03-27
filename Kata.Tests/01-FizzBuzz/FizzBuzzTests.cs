@@ -16,9 +16,9 @@ public class FizzBuzzTests
         // Arrange
         var fissBuzz = new FissBuzz();
         // Act
-        var actual = fissBuzz.GetFissBuzz(input);
+        var actFissBuzz = fissBuzz.GetFissBuzz(input);
         // Assert
-        actual.Should().Be(expected);
+        actFissBuzz.Should().Be(expected);
     }
 }
 
