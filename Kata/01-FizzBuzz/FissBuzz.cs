@@ -2,9 +2,11 @@ namespace Kata.FissBuzz;
 
 public class FissBuzz
 {
-    public string SayHelloWorld()
+
+    public string GetFissBuzz(int input)
     {
-        return "Hello World!";
+        if (input % 3 == 0) return "Fizz";
+        return input.ToString();
     }
 }
 
