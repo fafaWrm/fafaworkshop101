@@ -35,15 +35,13 @@ public class FissBuzz
     public string GetFissBuzz()
     {
         string resultFizzBuzz = string.Empty;
-        for (var i = 1; i <= 100; i++)
-        {
+        for (var i = 1; i <= 100; i++)        {
             var printNumber = string.Empty;
-            if ((i % 5 == 0) && (i % 3 == 0)) printNumber += "FizzBuzz";
-            if (i % 5 == 0) printNumber += "Buzz";
-            if (i % 3 == 0) printNumber += "Fizz";           
+             printNumber += GetFissBuzz(i);                  
+          
             if (string.IsNullOrEmpty(printNumber))
                 printNumber = i.ToString(CultureInfo.InvariantCulture);
-          
+            
             resultFizzBuzz += " " + printNumber;
         }
         return resultFizzBuzz.Trim();
