@@ -8,11 +8,12 @@ public class FizzBuzzTests
     [InlineData(3, "Fizz")]    
     [InlineData(5, "Buzz")]   
     [InlineData(15, "FizzBuzz")]
+    [InlineData(100, "Buzz")]
 
 
     public void TestFissBuzz(int input ,string expected)
     {
-       
+        
         // Arrange
         var fissBuzz = new FissBuzz();
         // Act
