@@ -1,9 +1,9 @@
 using System;
 using System.Globalization;
 
-namespace Kata.FissBuzz;
+namespace Kata.FizzBuzz;
 
-public class FissBuzz
+public class FizzBuzz
 {
     
     public const string buzz = "Buzz";
